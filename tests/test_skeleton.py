@@ -20,5 +20,5 @@ def test_finding_to_dict():
     assert "detected_at" in d
 
 
-def test_registry_has_stub_scanners():
-    assert set(SCANNERS) == {"s3", "iam", "cloudtrail"}
+def test_registry_has_four_scanners():
+    assert set(SCANNERS) == {"ec2", "s3", "iam", "cloudtrail"}
